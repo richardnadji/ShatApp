@@ -14,3 +14,6 @@ $ npm install --save tcomb-form-native
 //or yarn
 $ yarn add tcomb-form-native
 ```
+* Person.js
+* add Person to SignUp
+* 

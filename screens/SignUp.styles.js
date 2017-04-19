@@ -13,4 +13,19 @@
       marginBottom: 30,
       color: '#dc143c',
     },
+    button: {
+      height: 36,
+      backgroundColor: '#48bbec',
+      borderColor: '#48bbec',
+      borderWidth: 1,
+      borderRadius: 8,
+      marginBottom: 10,
+      alignSelf: 'stretch',
+      justifyContent: 'center',
+    },
+    buttonText: {
+      fontSize: 18,
+      color: 'white',
+      alignSelf: 'center',
+    },
   });
