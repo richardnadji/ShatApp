@@ -11,5 +11,6 @@
       fontSize: 30,
       alignSelf: 'center',
       marginBottom: 30,
+      color: '#dc143c',
     },
   });
