@@ -8,3 +8,9 @@ react native project [codaisseur](https://reader.codaisseur.com/courses/advanced
 * ShatApp.styles.js
 * cleanup index.ios.js
 ### Building Forms
+to build forms a bit easier we'll use a package [tcomb-form-native](https://github.com/gcanti/tcomb-form-native)
+```sh
+$ npm install --save tcomb-form-native
+//or yarn
+$ yarn add tcomb-form-native
+```
