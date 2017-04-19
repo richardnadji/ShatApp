@@ -9,7 +9,7 @@ import store from './store';
 import styles from './ShatApp.styles';
 import SignIn from './screens/SignIn';
 import SignUp from './screens/SignUp';
-// import ChatRoom from './screens/ChatRoom';
+import ChatRoom from './screens/ChatRoom';
 
 
 export default class ShatApp extends Component {
@@ -20,6 +20,7 @@ export default class ShatApp extends Component {
           <Scene key="root">
             <Scene key="signIn" component={SignIn} title="Sign In" initial={true} />
             <Scene key="signUp" component={SignUp} title="Sign Up" />
+            <Scene key="chatRoom" component={ChatRoom} title="Chat Room" />
           </Scene>
         </Router>
       </Provider>
