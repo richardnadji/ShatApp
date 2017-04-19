@@ -18,3 +18,4 @@ $ yarn add tcomb-form-native
 * add Person to SignUp
 * add button (TouchableHighlight) to SignUp
 * fix keyboard view (KeyboardAvoidingView)
+* add functionality to SignUp form/button

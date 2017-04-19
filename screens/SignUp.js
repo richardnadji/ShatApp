@@ -15,6 +15,15 @@ export default class SignUp extends Component {
     super(props);
 
     this.onSubmit = this.onSubmit.bind(this);
+    this.onChange = this.onChange.bind(this);
+
+    this.state = {
+      newUser: null,
+    };
+  }
+
+  componentDidMount() {
+    this.refs.form.getComponent('name').refs.input.focus();
   }
 
   onSubmit() {
@@ -22,6 +31,15 @@ export default class SignUp extends Component {
     const newUser = form.getValue();
     if (!newUser) return;
     console.log(newUser);
+    this.clearForm();
+  }
+
+  clearForm() {
+    this.setState({ newUser: null });
+  }
+
+  onChange(newUser) {
+    this.setState({ newUser: newUser });
   }
 
   render() {
@@ -37,7 +55,10 @@ export default class SignUp extends Component {
             <Form
               ref="form"
               type={Person}
-              options={formOptions} />
+              options={formOptions}
+              value={this.state.newUser}
+              onChange={this.onChange}
+            />
             <TouchableHighlight style={styles.button}
               onPress={this.onSubmit}
               underlayColor='#99d9f4' >
