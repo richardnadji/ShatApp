@@ -6,12 +6,13 @@ import {
   TouchableHighlight,
 } from 'react-native';
 import t from 'tcomb-form-native';
+import { connect } from 'react-redux';
 
 import styles from './SignUp.styles';
 import Person, { formOptions } from '../models/Person';
 import signUp from '../actions/users/sign-up';
 
-export default class SignUp extends Component {
+class SignUp extends Component {
   constructor(props) {
     super(props);
 
@@ -32,7 +33,7 @@ export default class SignUp extends Component {
     const newUser = form.getValue();
     if (!newUser) return;
     console.log(newUser);
-    signUp(newUser);
+    this.props.signUp(newUser);
     this.clearForm();
   }
 
@@ -71,3 +72,7 @@ export default class SignUp extends Component {
     );
   }
 }
+
+const mapStateToProps = ({ loading }) => ({ loading });
+
+export default connect(mapStateToProps, { signUp })(SignUp);

@@ -34,3 +34,15 @@ set up redux store
 $ yarn add redux react-redux redux-thunk react-native-router-flux remote-redux-devtools
 ```
 * store.js
+* middleware/api.js
+* actions/messages/post.js
+* actions/messages/subscribe.js
+* actions/users/load.js
+* actions/users/sign-in.js
+* actions/users/sign-out.js
+* update actions/users/sign-up.js
+* reducers/index.js
+* reducers/loading.js
+* reducers/messages.js
+* reducers/user.js
+* update SignUp.js with connect to user redux actions
