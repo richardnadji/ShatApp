@@ -26,3 +26,11 @@ yarn add feathers feathers-hooks feathers-authentication@0.7.11 socket.io-client
 ```
 * lib/api.js
 ### Sign Up Action
+* actions/users/sign-up.js
+* update SignUp.js
+### Redux
+set up redux store
+```sh
+$ yarn add redux react-redux redux-thunk react-native-router-flux remote-redux-devtools
+```
+* store.js
