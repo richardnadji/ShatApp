@@ -19,3 +19,10 @@ $ yarn add tcomb-form-native
 * add button (TouchableHighlight) to SignUp
 * fix keyboard view (KeyboardAvoidingView)
 * add functionality to SignUp form/button
+### Connect to API, Client
+communicate with an API we'll use a [Feathers client](https://shutup-api.codaisseur.cloud/)
+```sh
+yarn add feathers feathers-hooks feathers-authentication@0.7.11 socket.io-client babel-polyfill
+```
+* lib/api.js
+### Sign Up Action
