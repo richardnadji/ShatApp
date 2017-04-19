@@ -7,6 +7,7 @@ const Person = t.struct({
 });
 
 export const formOptions = {
+  auto: 'placeholders',
   fields: {
     email: {
       keyboardType: 'email-address',
