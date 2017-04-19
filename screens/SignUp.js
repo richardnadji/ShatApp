@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {
   View,
+  KeyboardAvoidingView,
   Text,
   TouchableHighlight,
 } from 'react-native';
@@ -27,18 +28,22 @@ export default class SignUp extends Component {
     const Form = t.form.Form;
 
     return(
-      <View style={styles.container}>
-        <Text style={styles.title}>Sign Up for ShatApp</Text>
+      <View style={styles.outerContainer}>
+        <KeyboardAvoidingView
+          behavior="padding"
+          style={styles.container} >
+            <Text style={styles.title}>Sign Up for ShatApp</Text>
 
-        <Form
-          ref="form"
-          type={Person}
-          options={formOptions} />
-        <TouchableHighlight style={styles.button}
-          onPress={this.onSubmit}
-          underlayColor='#99d9f4' >
-            <Text style={styles.buttonText}>Sign Up</Text>
-        </TouchableHighlight>
+            <Form
+              ref="form"
+              type={Person}
+              options={formOptions} />
+            <TouchableHighlight style={styles.button}
+              onPress={this.onSubmit}
+              underlayColor='#99d9f4' >
+                <Text style={styles.buttonText}>Sign Up</Text>
+            </TouchableHighlight>
+        </KeyboardAvoidingView>
       </View>
     );
   }

@@ -16,4 +16,5 @@ $ yarn add tcomb-form-native
 ```
 * Person.js
 * add Person to SignUp
-* 
+* add button (TouchableHighlight) to SignUp
+* fix keyboard view (KeyboardAvoidingView)
