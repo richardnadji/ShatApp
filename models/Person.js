@@ -9,12 +9,17 @@ const Person = t.struct({
 export const formOptions = {
   auto: 'placeholders',
   fields: {
+    name: {
+      error: 'Insert your name please',
+    },
     email: {
       keyboardType: 'email-address',
       autoCapitalize: 'none',
+      error: 'Insert a valid email',
     },
     password: {
       secureTextEntry: true,
+      error: 'Insert a valid password'
     },
   }
 }
