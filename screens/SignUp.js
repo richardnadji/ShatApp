@@ -9,6 +9,7 @@ import t from 'tcomb-form-native';
 
 import styles from './SignUp.styles';
 import Person, { formOptions } from '../models/Person';
+import signUp from '../actions/users/sign-up';
 
 export default class SignUp extends Component {
   constructor(props) {
@@ -31,6 +32,7 @@ export default class SignUp extends Component {
     const newUser = form.getValue();
     if (!newUser) return;
     console.log(newUser);
+    signUp(newUser);
     this.clearForm();
   }
 
