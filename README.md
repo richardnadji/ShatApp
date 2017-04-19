@@ -46,3 +46,4 @@ $ yarn add redux react-redux redux-thunk react-native-router-flux remote-redux-d
 * reducers/messages.js
 * reducers/user.js
 * update SignUp.js with connect to user redux actions
+### Routes

@@ -7,6 +7,8 @@ import {
 } from 'react-native';
 import t from 'tcomb-form-native';
 import { connect } from 'react-redux';
+import { Actions } from 'react-native-router-flux';
+
 
 import styles from './SignUp.styles';
 import Person, { formOptions } from '../models/Person';
@@ -47,6 +49,7 @@ class SignUp extends Component {
 
   render() {
     const Form = t.form.Form;
+    const { loading } = this.props;
 
     return(
       <View style={styles.outerContainer}>
@@ -62,10 +65,19 @@ class SignUp extends Component {
               value={this.state.newUser}
               onChange={this.onChange}
             />
-            <TouchableHighlight style={styles.button}
+            <TouchableHighlight style={styles.buttonPrimary}
               onPress={this.onSubmit}
               underlayColor='#99d9f4' >
-                <Text style={styles.buttonText}>Sign Up</Text>
+                <Text style={styles.buttonText}>Sign up</Text>
+            </TouchableHighlight>
+
+            <TouchableHighlight
+              disabled={loading}
+              style={styles.buttonSecondary}
+              onPress={Actions.signIn}
+              underlayColor='#99d9f4'
+            >
+              <Text style={styles.buttonText}>Sign in</Text>
             </TouchableHighlight>
         </KeyboardAvoidingView>
       </View>

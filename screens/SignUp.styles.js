@@ -16,10 +16,20 @@
       marginBottom: 30,
       color: '#dc143c',
     },
-    button: {
+    buttonPrimary: {
       height: 36,
       backgroundColor: '#48bbec',
       borderColor: '#48bbec',
+      borderWidth: 1,
+      borderRadius: 8,
+      marginBottom: 10,
+      alignSelf: 'stretch',
+      justifyContent: 'center',
+    },
+    buttonSecondary: {
+      height: 36,
+      backgroundColor: '#5f9ea0',
+      borderColor: '#5f9ea0',
       borderWidth: 1,
       borderRadius: 8,
       marginBottom: 10,

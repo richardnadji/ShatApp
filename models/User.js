@@ -1,0 +1,21 @@
+import t from 'tcomb-form-native';
+
+const User = t.struct({
+  email: t.String,
+  password: t.String,
+});
+
+export const formOptions = {
+  auto: 'placeholders',
+  fields: {
+    email: {
+      keyboardType: 'email-address',
+      autoCapitalize: 'none',
+    },
+    password: {
+      secureTextEntry: true,
+    }
+  }
+}
+
+export default User;
